@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline;
+    text-decoration-color: #90c2c4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.content__image {
+    display: flex;
+    justify-content: center;
+}
+.image {
+    width: 50%;
+    height: 50%;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+    color: #826d92;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #ebe7f6;
+}
+.hidden {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: rgb(242, 238, 238);
+}
+
+.prev-button {
+  left: 25%;
+}
+
+.next-button {
+  right: 25%;
+}
