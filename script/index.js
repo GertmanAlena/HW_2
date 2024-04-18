@@ -34,8 +34,6 @@ btnNextLabelEl.ariaLabel = "Посмотреть следующий слайд";
 
 buttonsEl.appendChild(btnBackEl);
 buttonsEl.appendChild(btnNextEl);
-// buttonsEl.appendChild(btnPrevLabelEl);
-// buttonsEl.appendChild(btnNextLabelEl);
 contentEl.appendChild(buttonsEl);
 
 contentEl.appendChild(btnPrevLabelEl);
@@ -74,7 +72,6 @@ function addImages() {
         dataJsElsLength += 1;
     });
 };
-
 function prevStep() {
     for (let i = 0; i < allImages.length; i++) {
         if (allImages[i].classList.contains('active')) {
@@ -93,7 +90,6 @@ function prevStep() {
 
     }
 };
-
 function nextStep() {
     for (const image of allImages) {
         if (image.classList.contains('active')) {
